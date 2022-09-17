@@ -26,11 +26,11 @@
     letter-spacing: 0.02em;
     font-weight: 500;
     transition: color var(--transition-dur-and-func);
-}
-
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--accent-color);
+    
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
 }
 
 .contact-list-icon {

@@ -23,6 +23,15 @@
     border: 1px solid #afb1b8;
 
     transition: border var(--transition-dur-and-func);
+    
+    &:hover,
+    &:focus {
+      border: 2px solid var(--accent-color);
+      
+      .client-list-icon {
+        fill: var(--accent-color);
+      }
+    }
 }
 
 .client-list-icon {
@@ -33,12 +42,3 @@
     transition: fill var(--transition-dur-and-func);
 }
 
-.client-list-link:hover,
-.client-list-link:focus {
-    border: 2px solid var(--accent-color);
-}
-
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon {
-    fill: var(--accent-color);
-}

@@ -422,17 +422,17 @@ body {
   transition: color var(--transition-dur-and-func);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-}
-
 .social-list-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
 
   transition: fill var(--transition-dur-and-func);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
 }
 
 .social-list-link:hover .social-list-icon,
@@ -469,14 +469,6 @@ body {
   transition: border var(--transition-dur-and-func);
 }
 
-.client-list-icon {
-  width: 106px;
-  height: 60px;
-  fill: #afb1b8;
-
-  transition: fill var(--transition-dur-and-func);
-}
-
 .client-list-link:hover,
 .client-list-link:focus {
   border: 2px solid var(--accent-color);
@@ -486,6 +478,15 @@ body {
 .client-list-link:focus .client-list-icon {
   fill: var(--accent-color);
 }
+
+.client-list-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+
+  transition: fill var(--transition-dur-and-func);
+}
+
 
 /* ПОРТФОЛІО */
 
@@ -582,6 +583,10 @@ body {
   overflow: hidden;
 }
 
+.project-wrapper:hover .overlay {
+  transform: translateY(0%);
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -596,10 +601,6 @@ body {
   padding: 63px 24px 63px 24px;
   transform: translateY(100%);
   transition: transform var(--transition-dur-and-func);
-}
-
-.project-wrapper:hover .overlay {
-  transform: translateY(0%);
 }
 
 /* Footer / Підвал */
@@ -685,14 +686,14 @@ body {
   background-color: var(--accent-color);
 }
 
-.network-list-icon {
-  width: 20px;
-  height: 20px;
+.network-list-link:hover .network-list-icon,
+.network-list-link:focus .network-list-icon {
   fill: var(--secondary-color-background);
 }
 
-.network-list-link:hover .network-list-icon,
-.network-list-link:focus .network-list-icon {
+.network-list-icon {
+  width: 20px;
+  height: 20px;
   fill: var(--secondary-color-background);
 }
 
@@ -933,9 +934,7 @@ body {
   background-origin: border-box;
 }
 
-.modal-form-check:checked
-  + .modal-form-own-checkbox
-  + .modal-form-own-checkbox-icon {
+.modal-form-check:checked + .modal-form-own-checkbox + .modal-form-own-checkbox-icon {
   display: block;
 }
 

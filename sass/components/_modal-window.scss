@@ -12,10 +12,10 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition-dur-and-func);
-}
 
-.backdrop.is-hidden.modal {
-    transform: translate(-50%, -50%) scale(0);
+    .backdrop.is-hidden.& {
+      transform: translate(-50%, -50%) scale(0);
+    }
 }
 
 .modal-close-btn {
@@ -32,9 +32,9 @@
     padding: 0;
     background-color: transparent;
     transition: fill var(--transition-dur-and-func);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    fill: var(--accent-color);
+    
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
 }

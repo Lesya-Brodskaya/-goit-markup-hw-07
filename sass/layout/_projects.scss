@@ -31,13 +31,15 @@
     line-height: 1.89;
 }
 
-.project-shadow:hover {
-    box-shadow: 1px 4px 6px rgb(0 0 0 / 16%), 0px 4px 4px rgb(0 0 0 / 6%),
+.project-shadow {
+    &:hover {
+      box-shadow: 1px 4px 6px rgb(0 0 0 / 16%), 0px 4px 4px rgb(0 0 0 / 6%),
         0px 1px 1px rgb(0 0 0 / 12%);
-    transition: color var(--transition-dur-and-func);
+      transition: color var(--transition-dur-and-func);
+    }
 }
 
 .project-wrapper {
     position: relative;
     overflow: hidden;
-}
+} 
