@@ -44,9 +44,14 @@ button {
 body {
   font-family: var(--primary-font);
   color: var(--title-text-color);
-  background-color: #ffffff;
+  background-color: var(--secondary-color-background);
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -55,11 +60,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -102,7 +102,7 @@ body {
 
 /* Header / Шапка */
 
-/* Site nav / Навігація */
+/* Site-nav / Навігація */
 
 .page-header {
   padding-top: 24px;
@@ -149,7 +149,7 @@ body {
   letter-spacing: 0.02em;
   font-weight: 500;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func);
 }
 
 .current::after {
@@ -191,7 +191,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func);
 }
 
 .contact-link:hover,
@@ -203,7 +203,7 @@ body {
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  fill: #757575;
+  fill: var(--primary-text-color);
   fill: currentColor;
 }
 
@@ -281,7 +281,7 @@ body {
 .advantage-list-icon {
   width: 70px;
   height: 70px;
-  fill: #212121;
+  fill: var(--title-text-color);
 }
 
 .features {
@@ -348,7 +348,7 @@ body {
   padding: 27px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-color-background);
 
   position: absolute;
   bottom: 0;
@@ -371,7 +371,7 @@ body {
 }
 
 .team-item {
-  background: #ffffff;
+  background: var(--secondary-color-background);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
@@ -388,7 +388,7 @@ body {
   margin-bottom: 10px;
   text-align: center;
 
-  color: #212121;
+  color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.19;
 }
@@ -418,8 +418,8 @@ body {
   height: 44px;
 
   border-radius: 50%;
-  background-color: #ffffff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--secondary-color-background);
+  transition: color var(--transition-dur-and-func);
 }
 
 .social-list-link:hover,
@@ -432,7 +432,7 @@ body {
   height: 20px;
   fill: #afb1b8;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .social-list-link:hover .social-list-icon,
@@ -445,7 +445,7 @@ body {
 .client {
   padding-left: 0px;
 
-  background-color: #ffffff;
+  background-color: var(--secondary-color-background);
 }
 
 .client-list {
@@ -466,7 +466,7 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border var(--transition-dur-and-func);
 }
 
 .client-list-icon {
@@ -474,7 +474,7 @@ body {
   height: 60px;
   fill: #afb1b8;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .client-list-link:hover,
@@ -512,9 +512,9 @@ body {
   font-weight: 500;
   text-align: center;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func),
+    box-shadow 250ms var(--transition-dur-and-func),
+    background-color 250ms var(--transition-dur-and-func);
 }
 
 .btn-portfolio:hover,
@@ -532,7 +532,7 @@ body {
   padding-right: 25px;
   border-radius: 4px;
 
-  color: #ffffff;
+  color:var(--secondary-color-background);
   background-color: var(--accent-color);
 }
 
@@ -574,7 +574,7 @@ body {
 .project-shadow:hover {
   box-shadow: 1px 4px 6px rgb(0 0 0 / 16%), 0px 4px 4px rgb(0 0 0 / 6%),
     0px 1px 1px rgb(0 0 0 / 12%);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func);
 }
 
 .project-wrapper {
@@ -589,13 +589,13 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  color: #ffffff;
+  color: var(--secondary-color-background);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   padding: 63px 24px 63px 24px;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-dur-and-func);
 }
 
 .project-wrapper:hover .overlay {
@@ -640,7 +640,7 @@ body {
 .adress-link {
   color: rgba(255, 255, 255, 0.6);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func);
 }
 
 .adress-link:hover,
@@ -655,7 +655,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   text-align: start;
-  color: #ffffff;
+  color: var(--secondary-color-background);
   line-height: 16.41px;
 }
 
@@ -677,7 +677,7 @@ body {
 
   background-color: rgba(255, 255, 255, 0.1);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .network-list-link:hover,
@@ -688,7 +688,7 @@ body {
 .network-list-icon {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: var(--secondary-color-background);
 }
 
 .network-list-link:hover .network-list-icon,
@@ -703,7 +703,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   text-align: start;
-  color: #ffffff;
+  color: var(--secondary-color-background);
   line-height: 16.41px;
 }
 
@@ -714,7 +714,7 @@ body {
   border-color: rgba(255, 255, 255, 0.3);
   padding: 16px;
   background-color: #2f303a;
-  color: #ffffff;
+  color:var(--secondary-color-background);
 }
 
 .footer-form-submit {
@@ -726,7 +726,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--secondary-color-background);
   padding: 0;
   border: 0;
   background-color: var(--accent-color);
@@ -736,8 +736,8 @@ body {
   justify-content: center;
 
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
 }
 
 .submit-button-icon {
@@ -756,8 +756,8 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
 }
 
 .backdrop.is-hidden {
@@ -776,12 +776,12 @@ body {
   min-height: 581px;
   padding: 40px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--secondary-color-background);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-dur-and-func);
 }
 
 .backdrop.is-hidden.modal {
@@ -801,12 +801,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0;
   background-color: transparent;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 
 /* Modal Form / Модальна форма */
@@ -840,7 +840,7 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-dur-and-func);
 }
 
 .modal-form-input:focus {
@@ -854,8 +854,8 @@ body {
   left: 12px;
   transform: translateY(-50%);
   display: block;
-  fill: solid #212121;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: solid var(--title-text-color);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .modal-form-input-icon:focus {
@@ -871,7 +871,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--primary-text-color);
   margin-bottom: 4px;
 }
 
@@ -883,7 +883,7 @@ body {
   padding: 12px 16px;
   margin-bottom: 20px;
   resize: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-dur-and-func);
 }
 
 .modal-form-message:focus {
@@ -916,7 +916,7 @@ body {
 .modal-form-own-checkbox {
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--title-text-color);
   border-radius: 2px;
   cursor: pointer;
   margin-right: 9px;
@@ -940,7 +940,7 @@ body {
 }
 
 .modal-form-check:focus + .modal-form-own-checkbox {
-  box-shadow: 0 0 0 1px solid #212121;
+  box-shadow: 0 0 0 1px solid var(--title-text-color);
 }
 
 .modal-form-submit {
@@ -954,7 +954,7 @@ body {
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: none;
-  color: #ffffff;
+  color: var(--secondary-color-background);
   background-color: #188ce8;
   box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 15%), 0px 4px 4px 0px rgb(0 0 0 / 15%);
 }

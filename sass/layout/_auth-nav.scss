@@ -1,0 +1,42 @@
+.auth-nav {
+    display: flex;
+
+    align-items: center;
+    padding-left: 0px;
+}
+
+.contact-item {
+    display: flex;
+
+    align-items: center;
+    gap: 30px;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color-background);
+}
+
+.contact-link {
+    display: flex;
+
+    align-items: center;
+    caret-color: var(--accent-color);
+
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color-background);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    transition: color var(--transition-dur-and-func);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-color);
+}
+
+.contact-list-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: var(--primary-text-color);
+    fill: currentColor;
+}

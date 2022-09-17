@@ -1,0 +1,45 @@
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.site-nave {
+    display: flex;
+    column-gap: 50px;
+    padding-left: 0px;
+}
+
+.site-nav .site-link.current {
+    color: var(--accent-color);
+}
+
+.site-link.current {
+    color: var(--accent-color);
+}
+
+.site-link:hover {
+    color: var(--accent-color);
+}
+
+.site-link {
+    position: relative;
+
+    color: var(--title-text-color);
+    background-color: var(--secondary-color-background);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+
+    transition: color var(--transition-dur-and-func);
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
