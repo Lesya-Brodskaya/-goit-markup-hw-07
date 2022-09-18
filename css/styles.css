@@ -86,7 +86,7 @@ body {
   font-size: 26px;
 }
 
-.logo-header {
+.logo__header {
   color: #000000;
   font-family: var(--secondary-font);
   font-size: 26px;
@@ -129,18 +129,18 @@ body {
   padding-left: 0px;
 }
 
-.site-nav .site-link.current {
+.site-nav .site__link.current {
   color: var(--accent-color);
 }
 
-.site-link.current {
+.site__link.current {
   color: var(--accent-color);
 }
 
-.site-link:hover {
+.site__link:hover {
   color: var(--accent-color);
 }
-.site-link {
+.site__link {
   position: relative;
 
   color: var(--title-text-color);
@@ -180,7 +180,7 @@ body {
   color: var(--primary-text-color);
   background-color: var(--secondary-color-background);
 }
-.contact-link {
+.contact__link {
   display: flex;
 
   align-items: center;
@@ -194,8 +194,8 @@ body {
   transition: color var(--transition-dur-and-func);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 

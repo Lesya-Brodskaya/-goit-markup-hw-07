@@ -19,16 +19,16 @@
 
 .adress {
     padding-left: 0px;
+
+    &.text {
+      color: var(--secondary-color-background);
+      background-color: #2f303a;
+      line-height: 1.71;
+    }
 }
 
 .adress-item:not(:last-child) {
     margin-bottom: 9px;
-}
-
-.adress .text {
-    color: var(--secondary-color-background);
-    background-color: #2f303a;
-    line-height: 1.71;
 }
 
 .adress-link {

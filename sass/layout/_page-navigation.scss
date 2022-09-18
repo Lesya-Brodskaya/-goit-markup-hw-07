@@ -20,12 +20,12 @@
       border-radius: 2px;
       background-color: var(--accent-color);   
     }
-    .site-nav .site-link & {
+    .site-nav .site__link & {
       color: var(--accent-color);
     }
 }
 
-.site-link {
+.site__link {
     position: relative;
 
     color: var(--title-text-color);
