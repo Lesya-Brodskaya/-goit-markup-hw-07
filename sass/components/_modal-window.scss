@@ -13,7 +13,7 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition-dur-and-func);
 
-    .backdrop.is-hidden.& {
+    .backdrop.is-hidden & {
       transform: translate(-50%, -50%) scale(0);
     }
 }
