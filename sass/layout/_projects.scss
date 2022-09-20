@@ -9,14 +9,14 @@
     background-color: var(--secondari-color-background);
 }
 
-.project-card {
+.project__card {
     border: 1px solid #ececec;
     padding: 20px 24px;
 
     flex-basis: calc(100% - 60px / 3);
 }
 
-.project-title {
+.project__title {
     margin-bottom: 4px;
 
     color: var(--title-text-color);
@@ -25,7 +25,7 @@
     letter-spacing: 0.06em;
 }
 
-.project-text {
+.project__text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.89;
@@ -39,7 +39,7 @@
     }
 }
 
-.project-wrapper {
+.project__wrapper {
     position: relative;
     overflow: hidden;
 } 

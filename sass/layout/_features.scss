@@ -12,7 +12,7 @@
     border-radius: 4px;
 }
 
-.advantage-list-icon {
+.advantage__icon {
     width: 70px;
     height: 70px;
     fill: var(--title-text-color);
@@ -40,7 +40,7 @@
     text-align: center;
 }
 
-.features-title {
+.features-list__title {
     margin-bottom: 10px;
 
     font-size: 14px;
@@ -48,7 +48,7 @@
     text-transform: uppercase;
 }
 
-.features-text {
+.features-list__text {
     width: 270px;
     color: var(--primary-text-color);
     line-height: 1.71;

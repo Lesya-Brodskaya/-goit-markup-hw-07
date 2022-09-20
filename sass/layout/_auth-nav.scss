@@ -5,7 +5,7 @@
     padding-left: 0px;
 }
 
-.contact-item {
+.auth-nav__item {
     display: flex;
 
     align-items: center;
@@ -14,7 +14,7 @@
     background-color: var(--secondary-color-background);
 }
 
-.contact__link {
+.auth-nav__link {
     display: flex;
 
     align-items: center;
@@ -33,7 +33,7 @@
     }
 }
 
-.contact-list-icon {
+.auth-nav__icon {
     margin-right: 10px;
     width: 16px;
     height: 12px;
