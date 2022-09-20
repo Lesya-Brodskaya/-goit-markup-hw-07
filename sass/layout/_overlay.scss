@@ -12,7 +12,7 @@
   padding: 63px 24px 63px 24px;
   transform: translateY(100%);
   transition: transform var(--transition-dur-and-func);
-  
+
   .project__wrapper:hover & {
     transform: translateY(0%);
   }

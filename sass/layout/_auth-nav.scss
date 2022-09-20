@@ -1,42 +1,42 @@
 .auth-nav {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    padding-left: 0px;
+  align-items: center;
+  padding-left: 0px;
 }
 
 .auth-nav__item {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    gap: 30px;
-    color: var(--primary-text-color);
-    background-color: var(--secondary-color-background);
+  align-items: center;
+  gap: 30px;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-color-background);
 }
 
 .auth-nav__link {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    caret-color: var(--accent-color);
+  align-items: center;
+  caret-color: var(--accent-color);
 
-    color: var(--primary-text-color);
-    background-color: var(--secondary-color-background);
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    transition: color var(--transition-dur-and-func);
-    
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+  color: var(--primary-text-color);
+  background-color: var(--secondary-color-background);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .auth-nav__icon {
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
-    fill: var(--primary-text-color);
-    fill: currentColor;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: var(--primary-text-color);
+  fill: currentColor;
 }

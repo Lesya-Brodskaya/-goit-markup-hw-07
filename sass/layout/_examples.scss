@@ -1,34 +1,34 @@
 .examples {
-    padding-top: 0px;
-    padding-left: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
 }
 
 .examples-card {
-    flex-basis: calc(100% - 60px / 3);
+  flex-basis: calc(100% - 60px / 3);
 }
 
 .examples-list {
-    display: flex;
-    padding-left: 0px;
-    gap: 30px;
+  display: flex;
+  padding-left: 0px;
+  gap: 30px;
 }
 
-.examples-list__img {
-    position: relative;
+.examples__img {
+  position: relative;
 }
 
-.examples-list__overlay {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    padding: 27px;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--secondary-color-background);
+.examples__overlay {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  padding: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-color-background);
 
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
 }
