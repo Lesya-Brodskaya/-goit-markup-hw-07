@@ -105,8 +105,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--transition-dur-and-func),
-    visibility var(--transition-dur-and-func);
+  transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -123,8 +122,7 @@ body {
   padding: 40px;
   border-radius: 4px;
   background-color: var(--secondary-color-background);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-dur-and-func);
 }
@@ -147,8 +145,7 @@ body {
   background-color: transparent;
   transition: fill var(--transition-dur-and-func);
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover, .modal-close-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -262,17 +259,14 @@ body {
   background-color: var(--accent-color);
   background-origin: border-box;
 }
-.modal-form__checkbox:hover,
-.modal-form__checkbox:focus {
+.modal-form__checkbox:hover, .modal-form__checkbox:focus {
   background-color: var(--accent-color);
 }
 .modal-form__check:focus + .modal-form__checkbox {
   box-shadow: 0 0 0 1px solid var(--title-text-color);
 }
 
-.modal-form__check:checked
-  + .modal-form__checkbox
-  + .modal-form-checkbox__icon {
+.modal-form__check:checked + .modal-form__checkbox + .modal-form__icon {
   display: block;
 }
 
@@ -289,8 +283,7 @@ body {
   border: none;
   color: var(--secondary-color-background);
   background-color: #188ce8;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .page-header {
@@ -372,8 +365,7 @@ body {
   font-weight: 500;
   transition: color var(--transition-dur-and-func);
 }
-.auth-nav__link:hover,
-.auth-nav__link:focus {
+.auth-nav__link:hover, .auth-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -391,11 +383,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/img-1-4.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-1-4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -535,8 +523,7 @@ body {
 
 .team__item {
   background: var(--secondary-color-background);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -574,8 +561,7 @@ body {
   background-color: var(--secondary-color-background);
   transition: color var(--transition-dur-and-func);
 }
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -585,8 +571,7 @@ body {
   fill: #afb1b8;
   transition: fill var(--transition-dur-and-func);
 }
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
+.social__link:hover .social__icon, .social__link:focus .social__icon {
   fill: var(--secondary-color-background);
 }
 
@@ -612,12 +597,10 @@ body {
   border: 1px solid #afb1b8;
   transition: border var(--transition-dur-and-func);
 }
-.client__link:hover,
-.client__link:focus {
+.client__link:hover, .client__link:focus {
   border: 2px solid var(--accent-color);
 }
-.client__link:hover .client__icon,
-.client__link:focus .client__icon {
+.client__link:hover .client__icon, .client__link:focus .client__icon {
   fill: var(--accent-color);
 }
 
@@ -647,14 +630,10 @@ body {
   line-height: 1.62;
   font-weight: 500;
   text-align: center;
-  transition: color var(--transition-dur-and-func),
-    box-shadow 250ms var(--transition-dur-and-func),
-    background-color 250ms var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func), box-shadow 250ms var(--transition-dur-and-func), background-color 250ms var(--transition-dur-and-func);
 }
-.btn-portfolio:hover,
-.btn-portfolio:focus {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08),
-    0 3px 1px rgba(0, 0, 0, 0.1);
+.btn-portfolio:hover, .btn-portfolio:focus {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08), 0 3px 1px rgba(0, 0, 0, 0.1);
   color: var(--secondary-color-background);
   background-color: var(--accent-color);
 }
@@ -699,8 +678,7 @@ body {
 }
 
 .project-shadow:hover {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
   transition: color var(--transition-dur-and-func);
 }
 
@@ -762,8 +740,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-dur-and-func);
 }
-.adress__link:hover,
-.adress__link:focus {
+.adress__link:hover, .adress__link:focus {
   color: var(--accent-color);
 }
 
@@ -794,8 +771,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transition-dur-and-func);
 }
-.network__link:hover,
-.network__link:focus {
+.network__link:hover, .network__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -804,8 +780,7 @@ body {
   height: 20px;
   fill: var(--secondary-color-background);
 }
-.network__link:hover .network__icon,
-.network__link:focus .network__icon {
+.network__link:hover .network__icon, .network__link:focus .network__icon {
   fill: var(--secondary-color-background);
 }
 
@@ -850,10 +825,9 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: color var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
 
 .footer-form__icon {
   margin-left: 10px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
